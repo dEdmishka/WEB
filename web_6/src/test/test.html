@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script type="text/javascript">
+        function AddTableRow(id) {
+            var table = document.getElementById(id);
+            var row = table.insertRow(table.rows.length);
+            var cell1 = row.insertCell(0);
+            var checkbox = document.createElement("input");
+            checkbox.type = "checkbox";
+            cell1.appendChild(checkbox);
+
+            var cell2 = row.insertCell(1);
+            var textbox = document.createElement("input");
+            textbox.type = "text";
+            cell2.appendChild(textbox);
+
+            var cell3 = row.insertCell(2);
+            textbox = document.createElement("input");
+            textbox.type = "text";
+            cell3.appendChild(textbox);
+        }
+
+        function DeleteTableRow(id) {
+            var table = document.getElementById(id);
+            var row = table.rows.length;
+            var counter = 0;
+            if (table.rows.length > 1) {
+                for (var i = 0; i <table.rows.length; i++) {
+                    var chk =table.rows[i].cells[0].childNodes[0];
+                    if (chk.checked) {
+                        table.deleteRow(i);
+                        row--;
+                        i--;
+                        counter = counter + 1;
+                    }
+                }
+                if (counter === 0) {
+                    alert("Please select the row that you want to delete.");
+                }
+            } else {
+                alert("There are no rows being added");
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <ul class="responsive-table">
+        <li class="table-row">
+            <div class="col col-1" data-label="Job Id">
+                Nozzle</div>
+            <div class="col col-2">
+                <table id="dataTable" class="table-bordered table-hover table-striped table">
+                    <tr>
+                        <td>Checkbox</td>
+                        <td>Textbox1</td>
+                        <td>Textbox2</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col col-3"></div>
+            <div class="col col-4">
+                <input type="button" class="btn btn-danger active" value="Add Row" onclick="AddTableRow('dataTable')" /><hr />
+                <input type="button" class="btn btn-info active" value="Delete Row" onclick="DeleteTableRow('dataTable')" />
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Web, second lab">
+    <meta name="author" content="Misha Melnyk">
+    <meta name="document-state" content="Static">
+    <meta name="resource-type" content="document">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Perfect web site</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <img src="../img/logo.svg" alt="logo" title="logo" class="navbar_logo">
+                <h2>Website</h2>
+                <nav class="navbar_menu">
+                    <ul id="menuList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="signin.html">Sign In</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="students.html">Students</a></li>
+                        <li><a href="calculate.html">Calculate</a></li>
+                    </ul>
+                </nav>
+                <img src="../img/menu_icon.svg" class="navbar_menu_icon" onclick="toggle_menu()"
+                     alt="menu_icon"
+                     title="menu_icon">
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="login">
+            <div class="form">
+                <div class="title">Sign Up</div>
+                <form action="#">
+                    <div class="form-element">
+                        <label>
+                            <input type="email" placeholder="Enter your email...">
+                        </label>
+                    </div>
+                    <div class="form-element">
+                        <label>
+                            <input type="password" placeholder="Enter your password...">
+                        </label>
+                    </div>
+                    <div class="form-element">
+                        <label>
+                            <input type="text" placeholder="Enter your name...">
+                        </label>
+                    </div>
+                    <div class="form-element">
+                        <label>
+                            <input type="text" placeholder="Enter your surname...">
+                        </label>
+                    </div>
+                    <div class="form-element">
+                        <label>
+                            <input type="text" placeholder="Enter your middle-name...">
+                        </label>
+                    </div>
+                    <div class="form-element">
+                        <label for="date">
+                            <span>Enter your birthday...</span><br>
+                            <input type="date" id="date">
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-element">
+                        <label for="groups">
+                            <span>Choose your group...</span><br>
+                            <select id="groups">
+                                <option disabled selected>Group...</option>
+                                <option>IA11</option>
+                                <option>IA12</option>
+                                <option>IA13</option>
+                                <option>IA14</option>
+                            </select>
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-element-gender">
+                        <label for="male">
+                            <input type="radio" name="gender" id="male"><span>Male</span>
+                        </label>
+                        <label for="female">
+                            <input type="radio" name="gender" id="female"><span>Female</span>
+                        </label>
+                    </div>
+                    <div class="form-element">
+                        <label>
+                            <span>Enter your phone number...</span><br>
+                            <input type="text" id="phone" class="mphone" placeholder="+38(0__)___-__-__">
+                        </label>
+                    </div>
+
+
+
+                    <div class="form-element button">
+                        <label><input type="button" value="Sign Up"></label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__menu">
+            <div class="footer__list__info">
+                <h3>СТРУКТУРА</h3>
+                <ul id="footer_ul_info">
+                    <li><small>Ректорат</small></li>
+                    <li><small>Вчена рада</small></li>
+                    <li><small>Департаменти</small></li>
+                </ul>
+            </div>
+            <div class="footer__list__contact">
+                <h3>МОЖЛИВОСТІ ОСВІТИ</h3>
+                <ul id="footer_ul_contact">
+                    <li><small>Дистанційна освіта</small></li>
+                    <li><small>Академічна мобільність</small></li>
+                    <li><small>Перепідготовка(друга вища освіта)</small></li>
+                </ul>
+            </div>
+            <div class="footer__list__users">
+                <h3>ДЛЯ КОРИСТУВАЧІВ</h3>
+                <ul id="footer_ul_users">
+                    <li><small>Школяру</small></li>
+                    <li><small>Вступнику</small></li>
+                    <li><small>Першокурснику</small></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="tel:+380123456789"><img src="../img/phone.svg" class="phone" alt="phone" title="phone"></a>
+            <a href="mailto: example.com"><img src="../img/email.svg" alt="email" class="email" title="email"></a>
+            <a href="tg://resolve?domain=username"><img src="../img/telegram.svg" alt="telegram" class="telegram"
+                                                        title="telegram"></a>
+            <a href="https://wa.me/6956562323"><img src="../img/whatsapp.svg" alt="whatsapp" class="whatsapp"
+                                                    title="whatsapp"></a>
+        </div>
+    </footer>
+</div>
+<script src="../javascript/index.js"></script>
+<script src="https://unpkg.com/imask"></script>
+<script src="../javascript/phone.js"></script>
+</body>
+</html>

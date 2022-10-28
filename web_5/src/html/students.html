@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no,
+          initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="Web, second lab">
+    <meta name="author" content="Misha Melnyk">
+    <meta name="document-state" content="Static">
+    <meta name="resource-type" content="document">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Perfect web site</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <img src="../img/logo.svg" alt="logo" title="logo" class="navbar_logo">
+                <h2>Website</h2>
+                <nav class="navbar_menu">
+                    <ul id="menuList">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="signin.html">Sign In</a></li>
+                        <li><a href="signup.html">Sign Up</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>
+                        <li><a href="calculate.html">Calculate</a></li>
+                    </ul>
+                </nav>
+                <img src="../img/menu_icon.svg" class="navbar_menu_icon" onclick="toggle_menu()"
+                     alt="menu_icon"
+                     title="menu_icon">
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="table_div">
+            <table>
+                <thead>
+                <tr>
+                    <th>Students</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Middle-name</th>
+                    <th>Birthday</th>
+                    <th>Group</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>email1@gmail.com</td>
+                    <td>qwerty123</td>
+                    <td>Raymond</td>
+                    <td>John</td>
+                    <td>Tester</td>
+                    <td>01.08.1970</td>
+                    <td>IA-11</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>email2@gmail.com</td>
+                    <td>qwerty321</td>
+                    <td>Thomas</td>
+                    <td>Woodrow</td>
+                    <td>Wilson</td>
+                    <td>11.09.1980</td>
+                    <td>IA-12</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>email3@gmail.com</td>
+                    <td>qwerty</td>
+                    <td>Marion</td>
+                    <td>Mike</td>
+                    <td>Rounds</td>
+                    <td>21.10.1990</td>
+                    <td>IA-13</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__menu">
+            <div class="footer__list__info">
+                <h3>СТРУКТУРА</h3>
+                <ul id="footer_ul_info">
+                    <li><small>Ректорат</small></li>
+                    <li><small>Вчена рада</small></li>
+                    <li><small>Департаменти</small></li>
+                </ul>
+            </div>
+            <div class="footer__list__contact">
+                <h3>МОЖЛИВОСТІ ОСВІТИ</h3>
+                <ul id="footer_ul_contact">
+                    <li><small>Дистанційна освіта</small></li>
+                    <li><small>Академічна мобільність</small></li>
+                    <li><small>Перепідготовка(друга вища освіта)</small></li>
+                </ul>
+            </div>
+            <div class="footer__list__users">
+                <h3>ДЛЯ КОРИСТУВАЧІВ</h3>
+                <ul id="footer_ul_users">
+                    <li><small>Школяру</small></li>
+                    <li><small>Вступнику</small></li>
+                    <li><small>Першокурснику</small></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="tel:+380123456789"><img src="../img/phone.svg" class="phone" alt="phone" title="phone"></a>
+            <a href="mailto: example.com"><img src="../img/email.svg" alt="email" class="email" title="email"></a>
+            <a href="tg://resolve?domain=username"><img src="../img/telegram.svg" alt="telegram" class="telegram"
+                                                        title="telegram"></a>
+            <a href="https://wa.me/6956562323"><img src="../img/whatsapp.svg" alt="whatsapp" class="whatsapp"
+                                                    title="whatsapp"></a>
+        </div>
+    </footer>
+</div>
+<script src="../javascript/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    line-height: 1;
+    font-size: 16px;
+    letter-spacing: normal;
+    background-color: #fefae0;
+    color: #283618;
+    font-family: Arial, sans-serif;
+    --border_color: palevioletred;
+    --background_menu_color: #dda15e;
+}
+
+.main {
+    padding: 30px;
+    flex: auto;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #dda15e;
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+    border: solid 5px var(--border_color);
+    border-radius: 16px;
+}
+
+.details__menu {
+    border: solid 5px var(--border_color);
+    background: var(--background_menu_color);
+    border-radius: 16px;
+    width: 400px;
+    height: 500px;
+    float: left;
+    padding: 10px;
+    text-align: left;
+}
+
+#details__list li{
+    margin: 15px;
+}
+
+.details__href:link {
+    color: blue;
+    text-decoration: none;
+}
+
+.details__href:visited {
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.details__href:hover, .details__li:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.menu {
+    border: solid 5px var(--border_color);
+    border-radius: 16px;
+    background: var(--background_menu_color);
+    width: 900px;
+    height: 500px;
+    float: right;
+    padding: 10px;
+}
+
+.menu__list__test {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.menu__ul__test {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+#menu_ul_test li {
+    display: inline;
+}
+
+.img1 {
+    margin: 15px;
+    padding: 2px;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    box-shadow: 5px 5px #999999;
+}
+
+.img1:hover {
+    transform: scale(1.5);
+}
+
+
+.footer__menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    padding: 35px 0 35px 20px;
+    background-color: #bc6c25;
+    color: #fff;
+}
+
+ul#footer_ul_info, #footer_ul_contact, #footer_ul_users {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__list__users {
+    margin-right: 150px;
+}
+
+li small {
+    display: flex;
+    margin: 8px;
+}
